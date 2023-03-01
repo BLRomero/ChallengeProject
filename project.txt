@@ -1,0 +1,84 @@
+Color Codes:
+#d9ed92
+#b5e48c 
+#9d98c
+#76c893
+#52b69a
+#34a0a4
+#168aad
+#1a759f
+#1e6091
+#184e77
+
+
+Photo Acknowledgements:
+
+Photo by Markus Petritz on Unsplash barn
+    https://unsplash.com/photos/IUkADtlFbK0
+    
+
+Photo by Jason Rosewell on Unsplash barn door
+    https://unsplash.com/photos/D3YwPVsNATg
+
+Photo by Court on Unsplash basketofeggs
+    https://unsplash.com/photos/Jo2tCHAy-8E
+
+
+Photo by Brett Jordan on Unsplash chickens
+       https://unsplash.com/photos/tp9Y4_w9DIA
+
+Photo by Dani Milington on Unsplash chickensbarn
+    https://unsplash.com/photos/J6EpY43_1jg
+
+Photo by Wolfgang Hasselmann on Unsplash    cownose 
+    https://unsplash.com/photos/CY6MLcLvdX0    
+
+Photo by Annie Spratt on Unsplash cows , cows2
+       https://unsplash.com/photos/JMjNnQ2xFoY
+
+Photo by Jamie Street on Unsplash dog
+   https://unsplash.com/photos/DZ3ixpNPt7c
+
+Photo by Andrea Lightfoot on Unsplash ducks
+    https://unsplash.com/photos/cATSyY1zqJI
+
+Photo by 青 晨 on Unsplash  eggstack
+    https://unsplash.com/photos/eIzzzwtkBjU
+
+Photo by Amandeep Chaudhary on Unsplash  goat
+    https://unsplash.com/photos/2dyNOXY7aF4    
+
+Photo by Annika Treial on Unsplash horses
+    https://unsplash.com/photos/e4WUwbcur7Y
+
+Photo by Sulthan Auliya on Unsplash  lamb
+    https://unsplash.com/photos/E9ex3BxWqG0
+
+Photo by Kenneth Schipper Vera on Unsplash pigs
+    https://unsplash.com/photos/6y7jACxmhP8    
+
+
+Shantell Sans
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+
+font-family: 'Shantell Sans', cursive;
+
+
+
+Montserrat
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+font-family: 'Montserrat', sans-serif;
+
