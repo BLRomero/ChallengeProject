@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" async ></script> 
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+        
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <title>Bonnette Romero Farm Animals Match Game WDD 300 Challenge Project</title>
+</head>
+<body class="project">
+    <h1 class="page-title">Farm Animal Match Game</h1>
+        <div class="overlay-text visible">
+            Click to Start
+        </div>
+        <div id=" game-over-text" class="overlay-text">
+            Game Over
+            <span class="overlay-text-sm">Click to Restart</span>
+        </div>
+        <div id=" you-won-text" class="overlay-text">
+            You Won!
+            <span class="overlay-text-sm">Click to Restart</span>
+        </div>
+        <div class="game-container">
+            <div class="game-info-container">
+                <div  class="game-info">
+                    Time: <Span id="time-reamining">100</Span>
+                </div>
+
+                <div class="game-info">
+                    Flips <span id="flips">0</span>
+                </div>
+            </div>
+                <div class="card">
+                    <div class="card-back card-face">
+                         <img  class="barndoor" src="./images/barndoor.jpg" alt="wooden barn door" height = 175px width = 125px> 
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="animals" src="./images/chickensbarn2.jpg" alt="chickens" height = 175px width = 125px>
+                    </div>
+                </div>
+                    
+                <div class="card">
+                    <div class="card-back card-face">
+                         <img  class="barndoor" src="./images/barndoor.jpg" alt="wooden barn door" height = 175px width = 125px> 
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="animals" src="./images/chickensbarn2.jpg" alt="chickens" height = 175px width = 125px>
+                    </div>
+                </div>
+                    
+                <div class="card">
+                    <div class="card-back card-face">
+                         <img  class="barndoor" src="./images/barndoor.jpg" alt="wooden barn door" height = 175px width = 125px> 
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="animals" src="./images/cows2.jpg" alt="chickens" height = 175px width = 125px>
+                    </div>
+                </div>
+                    
+                <div class="card">
+                    <div class="card-back card-face">
+                         <img  class="barndoor" src="./images/barndoor.jpg" alt="wooden barn door" height = 175px width = 125px> 
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="animals" src="./images/cows2.jpg" alt="chickens" height = 175px width = 125px>
+                    </div>
+                </div>
+                    
+                <div class="card">
+                    <div class="card-back card-face">
+                         <img  class="barndoor" src="./images/barndoor.jpg" alt="wooden barn door" height = 175px width = 125px> 
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="animals" src="./images/dog.jpg" alt="chickens" height = 175px width = 125px>
+                    </div>
+                </div>
+                    
+                <div class="card">
+                    <div class="card-back card-face">
+                         <img  class="barndoor" src="./images/barndoor.jpg" alt="wooden barn door" height = 175px width = 125px> 
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="animals" src="./images/dog.jpg" alt="chickens" height = 175px width = 125px>
+                    </div>
+                </div>
+                    
+                <div class="card">
+                    <div class="card-back card-face">
+                         <img  class="barndoor" src="./images/barndoor.jpg" alt="wooden barn door" height = 175px width = 125px> 
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="animals" src="./images/ducks.jpg" alt="chickens" height = 175px width = 125px>
+                    </div>
+                </div>
+                    
+                <div class="card">
+                    <div class="card-back card-face">
+                         <img  class="barndoor" src="./images/barndoor.jpg" alt="wooden barn door" height = 175px width = 125px> 
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="animals" src="./images/ducks.jpg" alt="chickens" height = 175px width = 125px>
+                    </div>
+                </div>
+                    
+                <div class="card">
+                    <div class="card-back card-face">
+                         <img  class="barndoor" src="./images/barndoor.jpg" alt="wooden barn door" height = 175px width = 125px> 
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="animals" src="./images/goat.jpg" alt="chickens" height = 175px width = 125px>
+                    </div>
+                </div>
+                    
+                <div class="card">
+                    <div class="card-back card-face">
+                         <img  class="barndoor" src="./images/barndoor.jpg" alt="wooden barn door" height = 175px width = 125px> 
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="animals" src="./images/goat.jpg" alt="chickens" height = 175px width = 125px>
+                    </div>
+                </div>
+                    
+                <div class="card">
+                    <div class="card-back card-face">
+                         <img  class="barndoor" src="./images/barndoor.jpg" alt="wooden barn door" height = 175px width = 125px> 
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="animals" src="./images/horses.jpg" alt="chickens" height = 175px width = 125px>
+                    </div>
+                </div>
+                    
+                <div class="card">
+                    <div class="card-back card-face">
+                         <img  class="barndoor" src="./images/barndoor.jpg" alt="wooden barn door" height = 175px width = 125px> 
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="animals" src="./images/horses.jpg" alt="chickens" height = 175px width = 125px>
+                    </div>
+                </div>
+                    
+                <div class="card">
+                    <div class="card-back card-face">
+                         <img  class="barndoor" src="./images/barndoor.jpg" alt="wooden barn door" height = 175px width = 125px> 
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="animals" src="./images/lamb.jpg" alt="chickens" height = 175px width = 125px>
+                    </div>
+                </div>
+                    
+                <div class="card">
+                    <div class="card-back card-face">
+                         <img  class="barndoor" src="./images/barndoor.jpg" alt="wooden barn door" height = 175px width = 125px> 
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="animals" src="./images/lamb.jpg" alt="chickens" height = 175px width = 125px>
+                    </div>
+                </div>
+                    
+                <div class="card">
+                    <div class="card-back card-face">
+                         <img  class="barndoor" src="./images/barndoor.jpg" alt="wooden barn door" height = 175px width = 125px> 
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="animals" src="./images/pigs.jpg" alt="chickens" height = 175px width = 125px>
+                    </div>
+                </div>
+                    
+                <div class="card">
+                    <div class="card-back card-face">
+                         <img  class="barndoor" src="./images/barndoor.jpg" alt="wooden barn door" height = 175px width = 125px> 
+                    </div>
+                    <div class="card-front card-face">
+                        <img class="animals" src="./images/pigs.jpg" alt="chickens" height = 175px width = 125px>
+                    </div>
+                </div>
+                    
+          
+    </div>
+    <footer>Bonnette Romero | BYU-Idaho  WDD 330 Brother Andrew Chandler | Farm Animal Match Game | April 5, 2023</footer>
+</body>
+</html> 
