@@ -5,9 +5,10 @@ class MixOrMatch {
     this.timeRemaining = totalTime;
     this.timer = document.getElementById("time-remaining");
     this.ticker = document.getElementById("flips");
+    thi
   }
 
-  startGame() {
+  startGame = () => {
     this.cardToCheck = null;
     this.totalClicks = 0;
     this.timeRemaining = this.totalTime;
