@@ -1,0 +1,51 @@
+/* Proposal Styling */
+.proposalImg {
+    width:350px;
+    height: 400px;
+}
+.proposal p{
+    font-family: 'Shantell Sans', cursive;
+    font-size: 20px;
+    padding: 10px;
+}
+.proposal h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+.proposal h1 {
+    font-size: 48px;
+}
+.proposal h2 {
+    font-size: 40px;
+}
+.proposal h3 {
+    font-size: 32px;
+}
+.proposal h4 {
+    font-size: 24px;
+}
+.proposal {
+    padding:100px;
+    background: linear-gradient(to bottom right, #d9ed92, #b5e48c, #99d98c, #76c893, #52b69a, #34a0a4, #168aad, #1a759f, #1e6091, #184e77);
+}
+div.cardImg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+img.proposalImg{
+    border: 5px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 5px  #184e77;
+}
+.proposal header, footer {
+    text-align: center;
+}
+img.wireframes {
+    width:300px;
+    height:400px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.wireframesDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

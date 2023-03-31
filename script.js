@@ -108,7 +108,7 @@ class MixOrMatch {
   }
 }
 
-function ready() {
+// function ready() {
   let overlays = Array.from(document.getElementsByClassName("overlay-text"));
   let cards = Array.from(document.getElementsByClassName("card"));
   let game = new MixOrMatch(100, cards);
@@ -125,10 +125,10 @@ function ready() {
       game.flipCard(card);
     });
   });
-}
+// }
 
-if (document.readyState == "loading") {
-  document.addEventListener("DOMContentLoaded", ready);
-} else {
-  ready();
-}
+// if (document.readyState == "loading") {
+//   document.addEventListener("DOMContentLoaded", ready);
+// } else {
+//   ready();
+// }
