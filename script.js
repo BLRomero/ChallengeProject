@@ -1,3 +1,4 @@
+var count ;
 class MixOrMatch {
   constructor(totalTime, cards) {
     this.cardsArray = cards;
@@ -5,7 +6,6 @@ class MixOrMatch {
     this.timeRemaining = totalTime;
     this.timer = document.getElementById("time-remaining");
     this.ticker = document.getElementById("flips");
-    thi
   }
 
   startGame() {
@@ -15,6 +15,7 @@ class MixOrMatch {
     this.timeRemaining = this.totalTime;
     this.matchedCards = [];
     this.busy = true;
+    var count = 0;
 
     setTimeout(() => {
       this.shuffleCards();
@@ -29,7 +30,7 @@ class MixOrMatch {
   hideCards() {
     this.cardsArray.forEach((card) => {
       card.classList.remove("visible");
-      card.classList.remove("matched");
+      card.classList.remove("matched");     
     });
   }
 
@@ -39,20 +40,25 @@ class MixOrMatch {
       this.totalClicks++;
       this.ticker.innerText = this.totalClicks;
       this.flip();
-      // .card.classList.add("visible");
+      card.classList.add("visible");
 
       if (this.cardToCheck) this.checkForCardMatch(card);
       else this.cardToCheck = card;
     }
   }
+  
 
 flip() {
-  document.getElementById("img1").src="./images/chickensbarn2.jpg";
+  // document.getElementById("img1").src="./images/chickensbarn2.jpg";
 }
 
   checkForCardMatch(card) {
-    if (this.getCardType(card) === this.getCardType(this.cardToCheck))
+    let card1 = this.getCardType(card);
+    let card2 = this.getCardType(this.cardToCheck);
+    console.log(card1, card2)
+    if (card1 === card2){
       this.cardMatch(card, this.cardToCheck);
+    }
     else this.cardMismatch(card, this.cardToCheck);
 
     this.cardToCheck = null;
@@ -67,16 +73,23 @@ flip() {
   }
 
   cardMismatch(card1, card2) {
+    console.log("card mismatch")
     this.busy = true;
+    resetCard();
     setTimeout(() => {
       card1.classList.remove("visible");
       card2.classList.remove("visible");
       this.busy = false;
+      
     }, 1000);
   }
 
   getCardType(card) {
-    return card.getElementsByClassName("card-value")[0].src;
+    // return card.getElementsByClassName("card-front")[0].src;
+    let cardName = "frontimg_" + count;
+    console.log(cardName);
+    return document.getElementById(cardName).src;
+
   }
 
   startCountdown() {
@@ -129,7 +142,7 @@ flip() {
   
   cards.forEach((card) => {
     card.addEventListener("click", () => {
-      console.log("Click")
+      console.log("Card Click")
       game.flipCard(card);
     });
   });
@@ -140,3 +153,21 @@ flip() {
 // } else {
 //   ready();
 // }
+
+function onclickimg(numCard){
+    count = numCard;
+    console.log("click", numCard);
+    let imageClass = "backimg_" + numCard;
+    document.getElementById(imageClass).className="clickCard";
+    let frontimg ="frontimg_" + numCard;
+    document.getElementById(frontimg).className="card-front";
+    
+  }
+
+  function resetCard(){
+    console.log('reset');
+    for(let i = 0; i < 16; i++) {
+      let imgClass = "backimg_" + i;
+      document.getElementById(imgClass).className="cardReset";
+    }
+  }

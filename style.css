@@ -94,7 +94,7 @@ body.project{
 
 .card {
     position: relative;
-    background-color: #d9ed92;
+    /* background-color: #d9ed92; */
     height: 175px;
     width: 125px;
     border-radius: 10px; 
@@ -136,18 +136,31 @@ body.project{
 }
 
 .card:visible .card-back {
-    /* transform: rotateY(-180deg); */
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
+    /* transform: rotateY(180deg); */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; 
    }
+.cardReset{
+    transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; 
+}
 
 .card:visible .card-front{
-    /* transform: rotateY(0); */
-    transform: rotateY(-180deg);
+    transform: rotateY(0);
+    /* transform: rotateY(-180deg); */
 }
 
 .card.matched .animals {
     animation: dance 1s linear 3s 500ms;
 }
+
+.clickCard{
+    transform: rotateY(180deg);  
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; 
+    }
 
 .overlay-text { 
     display: none;
