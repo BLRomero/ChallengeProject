@@ -8,7 +8,8 @@ class MixOrMatch {
     thi
   }
 
-  startGame = () => {
+  startGame() {
+    document.getElementById("start").classList.add("visible");
     this.cardToCheck = null;
     this.totalClicks = 0;
     this.timeRemaining = this.totalTime;
@@ -17,7 +18,7 @@ class MixOrMatch {
 
     setTimeout(() => {
       this.shuffleCards();
-      this.countDown = this.startCountDown();
+      this.countDown = this.startCountdown();
       this.busy = false;
     }, 500);
 
@@ -25,7 +26,6 @@ class MixOrMatch {
     this.timer.innerText = this.timeRemaining;
     this.ticker.innerText = this.totalClicks;
   }
-
   hideCards() {
     this.cardsArray.forEach((card) => {
       card.classList.remove("visible");
@@ -34,15 +34,21 @@ class MixOrMatch {
   }
 
   flipCard(card) {
-    if (this.canFlipCard(card)) {
+    let canFlip = this.canFlipCard(card);
+    if (canFlip){
       this.totalClicks++;
       this.ticker.innerText = this.totalClicks;
-      card.classList.add("visible");
+      this.flip();
+      // .card.classList.add("visible");
 
       if (this.cardToCheck) this.checkForCardMatch(card);
       else this.cardToCheck = card;
     }
   }
+
+flip() {
+  document.getElementById("img1").src="./images/chickensbarn2.jpg";
+}
 
   checkForCardMatch(card) {
     if (this.getCardType(card) === this.getCardType(this.cardToCheck))
@@ -93,8 +99,8 @@ class MixOrMatch {
     this.hideCards();
   }
 
-  shuffleCards(cardsArray) {
-    for (let i = cardsArray.length - 1; i > 0; i--) {
+  shuffleCards() {
+    for (let i = this.cardsArray.length - 1; i > 0; i--) {
       let randIndex = Math.floor(Math.random() * (i + 1));
       this.cardsArray[randIndex].style.order = i;
       this.cardsArray[i].style.order = randIndex;
@@ -113,16 +119,17 @@ class MixOrMatch {
   let overlays = Array.from(document.getElementsByClassName("overlay-text"));
   let cards = Array.from(document.getElementsByClassName("card"));
   let game = new MixOrMatch(100, cards);
-
+   game.startGame();
   overlays.forEach((overlay) => {
     overlay.addEventListener("click", () => {
       overlay.classList.remove("visible");
-      game.startGame();
+     
     });
   });
   
   cards.forEach((card) => {
     card.addEventListener("click", () => {
+      console.log("Click")
       game.flipCard(card);
     });
   });
